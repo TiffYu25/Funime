@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <script src="js/user-menu.js" type="text/javascript"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">   
+    <title>Funime - Search</title>
+</head>
+<body>
+    <header>
+        <nav id="mainnav">
+            <a id="mainlogo" href="home.html"><h1>Funime</h1></a>
+            <div id="navlinks">
+                <a href="search.html">Search</a>
+                <a href="recommend.html">Recommend</a>
+                <a href="watchlist.html">Watchlist</a>
+            </div>
+            <div class="user-menu">
+                <div class="user-icon" onclick="toggleDropdown()"><i class="fas fa-user"></i></div>
+                <div class="dropdown" id="userDropdown">
+                    <a href="settings.html">User Settings</a>
+                    <a href="index.html">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="maindiv">
+        <h2>Search</h2>
+        <p>Search up the anime titles to add to your watchlist!</p>
+        <div id="search-container">
+            <div id="search">
+                <!-- Removed onchange="hideAllResult()" from below due to bug with clicks not being processed-->
+                <input id="search-input" type="search" placeholder="Search anime" onkeydown="processChange()"/> 
+                <i class="fas fa-lg fa-search"></i>
+            </div>
+            <div id="results">
+                <div class="result-item">
+                    <img src="images/noimage.jpg" class="anime-img">
+                    <p>Anime Title</p>
+                </div>
+                <div class="result-item">
+                    <img src="images/noimage.jpg" class="anime-img">
+                    <p>Anime Title</p>
+                </div>
+                <div class="result-item">
+                    <img src="images/noimage.jpg" class="anime-img">
+                    <p>Anime Title</p>
+                </div>
+                <div class="result-item">
+                    <img src="images/noimage.jpg" class="anime-img">
+                    <p>Anime Title</p>
+                </div>
+                <div class="result-item">
+                    <img src="images/noimage.jpg" class="anime-img">
+                    <p>Anime Title</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commented out until we find fix for footer layout -->
+    <!-- <footer>
+        Copyright &copy; 2024 Funime
+    </footer> -->
+    <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+#top-section {
+    padding: 1px 0 0;
+    color: white;
+    font-family: 'Luckiest Guy', cursive; /* Funime font */
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    box-shadow: inset 5px 5px 5px rgba(49, 32, 51, 0.3);
+}
+#middle-section {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #30214d;
+}
+#description {
+    margin: 60px 10%;
+}
+#description p {
+    margin: 0;
+    padding: 0;
+}
+#description a {
+    color: white;
+}
+
+/* Main page trending part */
+#trending {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Carousel styling */
+.carousel-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Hide the scrollbar on firefox */
+    scrollbar-width: none;
+}
+/*  Hide the scrollbar on chrome */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    /* Determines how many items can show on carousel */
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: auto;
+    height: 280px;
+}
+.carousel-item p {
+    padding: 0 20px;
+}
+.left,
+.right {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   color: white;
+}
+
+.left:hover,
+.right:hover {
+    color: #ff778a;
+}

@@ -1,0 +1,108 @@
+/* Container */
+body {
+    gap: 50px;
+}
+
+#maindiv {
+    align-self: center;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Anime Details */
+.anime-details {
+    padding: 20px;
+}
+
+.anime-details h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a2fdb; /* Purple title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.anime-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.anime-image img {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px; /* Rounded corners */
+    border: 5px solid #6a2fdb; /* Thick purple border */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* .anime-image img:hover { */
+    /* transform: scale(1.05); Slight zoom-in effect on hover */
+/* } */
+
+.anime-description {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    flex: 1; /* Take up remaining space */
+}
+
+.anime-description p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.rating span {
+    color: #4c2fbf;
+}
+
+button {
+    padding: 12px;
+    background-color: #6a2fdb;  /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff778a;  /* Darker shade on hover */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    margin-top: 30px;
+}
+.button-section button {
+    width: 200px;
+}
+#review-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+#review-section input {
+    font-size: 20px;
+    width: 190px;
+}

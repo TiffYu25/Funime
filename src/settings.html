@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/settings.css">
+
+    <script src="js/user-menu.js" type="text/javascript"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Funime - Settings</title>
+</head>
+<body id="settingsPage">
+    <header>
+        <nav id="mainnav">
+            <a id="mainlogo" href="home.html"><h1>Funime</h1></a>
+            <div id="navlinks">
+                <a href="search.html">Search</a>
+                <a href="recommend.html">Recommend</a>
+                <a href="watchlist.html">Watchlist</a>
+            </div>
+            <div class="user-menu">
+                <div class="user-icon" onclick="toggleDropdown()"><i class="fas fa-user"></i></div>
+                <div class="dropdown" id="userDropdown">
+                    <a href="settings.html">User Settings</a>
+                    <a href="index.html">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background"></div> 
+
+    <div id="maindiv">
+        <h2>User Settings</h2>
+        <p style="text-align: center;"> Current Username: <span id="username"></span></p>
+    
+        <div class="accordion">
+            <!-- <div class="accordion-item">
+                <button class="accordion-header">Change Profile Picture</button>
+                <div class="accordion-body">
+                    <form id="profileForm" enctype="multipart/form-data">
+                        <input type="file" name="userIcon" accept="image/*" id="fileInput">
+                        <button type="submit">Upload</button>
+                    </form>
+                    <div id="preview">
+                        <img src="" alt="Profile Picture" id="previewImage">
+                    </div>
+                </div>
+            </div> -->
+    
+            <div class="accordion-item">
+                <button class="accordion-header">Change Username</button>
+                <div class="accordion-body">
+                    <form id="usernameForm">
+                        <input type="text" name="username" id="usernameInput" placeholder="Enter new username" required>
+                        <button type="submit">Save Username</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <button class="accordion-header">Change Password</button>
+                <div class="accordion-body">
+                    <form id="passwordForm">
+                        <input type="password" name="currentPassword" id="currentPassword" placeholder="Current Password" required>
+                        <input type="password" name="newPassword" id="newPassword" placeholder="New Password" required>
+                        <button type="submit">Change Password</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <button class="accordion-header">Delete Account</button>
+                <div class="accordion-body">
+                    <button id="deleteAccountBtn">Delete My Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/settings.js"></script>
+</body>
+</html>

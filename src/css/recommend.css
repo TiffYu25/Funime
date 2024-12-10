@@ -1,0 +1,39 @@
+h2 {
+    color: white;
+    margin-bottom: 0;
+}
+
+#maindiv {
+    color: white;
+    background-color: #30214d;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+#recommend-container {
+    margin: 0 50px;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* Hide the scrollbar on firefox */
+    scrollbar-width: none;
+}
+
+/*  Hide the scrollbar on chrome */
+#recommend-container::-webkit-scrollbar {
+    display: none;
+}
+
+.recommend {
+    min-width: 200px;
+    align-self: center;
+}
+.recommend img{
+    width: 200px;
+    height: auto;
+}

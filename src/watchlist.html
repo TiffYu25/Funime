@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/watchlist.css">
+
+    <script src="js/user-menu.js" type="text/javascript"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Funime - Watchlist</title>
+</head>
+<body>
+    <header>
+        <nav id="mainnav">
+            <a id="mainlogo" href="home.html"><h1>Funime</h1></a>
+            <div id="navlinks">
+                <a href="search.html">Search</a>
+                <a href="recommend.html">Recommend</a>
+                <a href="watchlist.html">Watchlist</a>
+            </div>
+            <div class="user-menu">
+                <div class="user-icon" onclick="toggleDropdown()"><i class="fas fa-user"></i></div>
+                <div class="dropdown" id="userDropdown">
+                    <a href="settings.html">User Settings</a>
+                    <a href="index.html">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="maindiv">
+        <h2 class="watchlist-header">Watchlist</h2>
+        <p class="watchlist-header">Select the options to get your corresponding list of anime</p>
+        <div id="section-buttons">
+            <button id="current-button">Current</button>
+            <button id="reviewed-button">Reviewed</button>
+            <!-- <button id="watchlater-button">Watch Later</button> -->
+        </div>
+        <div id="section-container">
+            <div class="section" id="current-section">
+                <h2>Current</h2>
+                <div class="anime-container">
+                </div>
+            </div>
+            <div class="section" id="reviewed-section">
+                <h2>Reviewed</h2>
+                <div class="anime-container">
+                </div>
+            </div>
+            <!-- <div class="section" id="watchlater-section">
+                <h2>Watch Later</h2>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Uncomment if we find fix for footer layout bug -->
+    <!-- <footer>
+        Copyright &copy; 2024 Funime
+    </footer> -->
+    <script src="js/watchlist.js"></script>
+</body>
+</html>

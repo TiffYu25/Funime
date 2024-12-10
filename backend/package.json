@@ -1,0 +1,29 @@
+{
+  "name": "cs409_final_project_backend",
+  "version": "1.0.0",
+  "description": "Backend for CS 409 final project",
+  "authors": [
+    "Nehal Tangudu <ntang9@illinois.edu>"
+  ],
+  "scripts": {
+    "start": "nodemon --exec node server.js"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiuc-web-programming/mp3_starter_17.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^6.10.0",
+    "mongoose": "^5.4.18",
+    "nodemon": "^1.11.0",
+    "bcrypt": "^5.0.1"
+  }
+}
