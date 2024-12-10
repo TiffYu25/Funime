@@ -84,7 +84,11 @@ async function fetchAnime(genres,limit) {
     let response = await fetch(`https://api.jikan.moe/v4/anime?order_by=popularity&genres=${genreMap[genres[0]]},${genreMap[genres[1]]},${genreMap[genres[2]]}&type=tv&limit=${limit}`);
     let res = await response.json();
     let data = res.data;
-
+    if (data.length == 0) {
+        response = await fetch(`https://api.jikan.moe/v4/anime?order_by=popularity&limit=${limit}`);
+        res = await response.json();
+        data = res.data;
+    }
     return data
 
 };
@@ -96,6 +100,7 @@ async function populateRec() {
     await top3Genres().then((genres) => {
         console.log(genres);
         fetchAnime(genres,limit).then((animeList) => {
+            console.log(animeList);
             for (let i = 0; i < limit; i++) {
                 let anime = animeList[i];
                 if (anime.mal_id in myuser.animeList) {
