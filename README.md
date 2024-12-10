@@ -6,4 +6,6 @@
 
 ## Funime
 
+[Link to the deployed website](https://tiffyu25.github.io/Funime/)
+
 Anime recommendation website where the recommendation is based on your watch history and ratings for each anime.
