@@ -2,7 +2,7 @@
 - Nehal Tangudu (nehaltangudu12)
 - Tiffany Yu (TiffYu25)
 - Devashree Selvakumar (DevashreeS26)
-- Rutuja Narwade
+- Rutuja Narwade (narwaderutuja)
 
 ## Funime
 
