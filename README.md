@@ -8,4 +8,6 @@
 
 [Link to the deployed website](https://tiffyu25.github.io/Funime/)
 
+[Here's a link to our Gitlab repository](https://gitlab.com/TiffYu25/cs409_final_project) (Note: Gitlab Pages will not work)
+
 Anime recommendation website where the recommendation is based on your watch history and ratings for each anime.
