@@ -1,12 +1,12 @@
 // Licensor-to-URL Mapping
-const licensorUrls = {
-    "Crunchyroll": "https://www.crunchyroll.com/",
-    "Funimation": "https://www.funimation.com/",
-    "Netflix": "https://www.netflix.com/",
-    "Hulu": "https://www.hulu.com/",
-    "Amazon Prime Video": "https://www.primevideo.com/",
-    "Disney+": "https://www.disneyplus.com/"
-};
+// const licensorUrls = {
+//     "Crunchyroll": "https://www.crunchyroll.com/",
+//     "Funimation": "https://www.funimation.com/",
+//     "Netflix": "https://www.netflix.com/",
+//     "Hulu": "https://www.hulu.com/",
+//     "Amazon Prime Video": "https://www.primevideo.com/",
+//     "Disney+": "https://www.disneyplus.com/"
+// };
 
 // Jikan API: Fetch Random Anime Details
 //const apiUrl = `https://api.jikan.moe/v4/random/anime`;
@@ -33,22 +33,22 @@ fetch(apiUrl)
         document.getElementById("anime-rating").innerText = `Rating: ${anime.score || "N/A"}/10`;
 
         // Update "Where to Watch" with licensor links
-        const whereToWatch = document.getElementById("anime-sites");
-        const licensors = anime.licensors; // Licensors list from the API
-        if (licensors.length > 0) {
-            whereToWatch.innerHTML = licensors.map(licensor => {
-                const licensorUrl = licensorUrls[licensor] || "#"; // Use mapped URL or fallback
-                return `<a href="${licensorUrl}" target="_blank">${licensor}</a>`;
-            }).join(" | ");
-        } else {
-            whereToWatch.innerText = "No licensor information available.";
-        }
+        // const whereToWatch = document.getElementById("anime-sites");
+        // const licensors = anime.licensors; // Licensors list from the API
+        // if (licensors.length > 0) {
+        //     whereToWatch.innerHTML = licensors.map(licensor => {
+        //         const licensorUrl = licensorUrls[licensor] || "#"; // Use mapped URL or fallback
+        //         return `<a href="${licensorUrl}" target="_blank">${licensor}</a>`;
+        //     }).join(" | ");
+        // } else {
+        //     whereToWatch.innerText = "No licensor information available.";
+        // }
     })
     .catch(error => {
         console.error("Error fetching anime details:", error);
         document.getElementById("anime-title").innerText = "Error loading anime.";
         document.getElementById("anime-desc").innerText = "Please try reloading the page.";
-        document.getElementById("anime-sites").innerText = "No licensor information available.";
+        // document.getElementById("anime-sites").innerText = "No licensor information available.";
     });
 
 document.getElementById("add-anime-button").addEventListener("click", (event) => {

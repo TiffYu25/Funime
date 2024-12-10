@@ -32,7 +32,13 @@ body {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.anime-image img {
+.anime-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+#anime-image {
     width: 200px;
     height: 300px;
     border-radius: 15px; /* Rounded corners */
